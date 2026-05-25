@@ -23,11 +23,7 @@ export default function HalamanUser() {
       <div className="login-card">
         <div className="login-header">
           <div className="login-icon">
-            <img
-              src="/src/img/logo verifified user.png"
-              alt="Logo"
-              style={{ width: 30, height: 30, objectFit: "contain" }}
-            />
+            <i className="bi bi-person-check-fill"></i>
           </div>
           <h1 className="login-title">DATA SERTIFIKAT PESERTA OJT</h1>
           <p className="login-subtitle">PT. GEO MANDIRI KREASI</p>
