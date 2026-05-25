@@ -152,13 +152,21 @@ export default function PilihPeserta() {
 
 function chipStyle(active, color, bg, border) {
   return {
-    padding: "5px 12px", borderRadius: 20, fontSize: 11, fontWeight: 600,
-    cursor: "pointer", fontFamily: "inherit", transition: "all 0.15s",
-    background: active ? bg : "rgba(255,255,255,0.06)",
-    color: active ? color : "rgba(255,255,255,0.5)",
-    border: active ? `1.5px solid ${border}` : "1.5px solid rgba(255,255,255,0.1)",
+    padding: "5px 12px",
+    borderRadius: 20,
+    fontSize: 11,
+    fontWeight: 600,
+    cursor: "pointer",
+    fontFamily: "inherit",
+    transition: "all 0.15s",
+
+    // NOTE: filter card background-nya putih (#fff), jadi teks non-active tidak boleh putih transparan.
+    background: active ? bg : "rgba(15, 23, 42, 0.04)",
+    color: active ? color : "rgba(15, 23, 42, 0.65)",
+    border: active ? `1.5px solid ${border}` : "1.5px solid rgba(148,163,184,0.35)",
   };
 }
+
 
 const styles = {
   wrapper: {

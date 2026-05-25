@@ -23,7 +23,11 @@ export default function HalamanUser() {
       <div className="login-card">
         <div className="login-header">
           <div className="login-icon">
-            <i className="bi bi-person-check-fill"></i>
+            <img
+              src="/src/img/logo verifified user.png"
+              alt="Logo"
+              style={{ width: 30, height: 30, objectFit: "contain" }}
+            />
           </div>
           <h1 className="login-title">DATA SERTIFIKAT PESERTA OJT</h1>
           <p className="login-subtitle">PT. GEO MANDIRI KREASI</p>
@@ -54,14 +58,7 @@ export default function HalamanUser() {
             </div>
           </div>
 
-          <div className="mb-2">
-            <label className="form-label fw-semibold">Email</label>
-            <div className="input-group">
-              <span className="input-group-text"><i className="bi bi-envelope-fill"></i></span>
-              <input type="text" className="form-control" value={user.email} disabled readOnly />
-            </div>
-          </div>
-
+          
           <div className="mb-3">
             <label className="form-label fw-semibold">ID Peserta</label>
             <div className="input-group">
